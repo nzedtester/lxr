@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>LUXURY CONFIG-AI</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>LUX DPI-AI 4.0</h1>
+
+        <div class="input-group">
+            <label for="phoneMake">Iphone:</label>
+            <input type="text" id="phoneMake" list="phoneSuggestions" placeholder="Thêm cấu hình máy" required>
+            <datalist id="phoneSuggestions">
+                <option value="iPhone 15 Pro Max">
+                <option value="iPhone 15 Plus">
+                <option value="iPhone 15">
+                <option value="iPhone 14 Pro Max">
+                <option value="iPhone 14 Plus">
+                <option value="iPhone 14">
+                <option value="iPhone 13 Pro Max">
+                <option value="iPhone 13">
+                <option value="iPhone 12 Pro Max">
+                <option value="iPhone 12 Pro">
+                <option value="iPhone 12 mini">
+                <option value="iPhone 12">
+                <option value="iPhone 11 Pro Max">
+                <option value="iPhone 11 Pro">
+                <option value="iPhone 11">
+                <option value="iPhone XS Max">
+                <option value="iPhone XS">
+                <option value="iPhone XR">
+                <option value="iPhone X">
+                <option value="iPhone SE (3rd Gen)">
+                <option value="iPhone SE (2nd Gen)">
+                <option value="iPhone 8 Plus">
+                <option value="IPhone 8">
+            </datalist>
+        </div>
+
+<div class="input-group">
+    <label for="sensitivityType">Loại Độ Nhạy:</label>
+    <select id="sensitivityType">
+        <option value="aggressive">Mượt Mà</option>
+        <option value="precise">Chính Xác</option>
+        <option value="balanced">Cân Bằng</option>
+    </select>
+</div>
+
+<div class="input-group" id="dpiOptionGroup">
+    <label for="includeDPI">Tạo kèm DPI:</label>
+    <select id="includeDPI">
+        <option value="yes">Có</option>
+        <option value="no">Không</option>
+    </select>
+</div>
+
+
+<div class="input-group" id="simpleOptionGroup" style="display: none;">
+    <label for="simpleSensitivity">DPI VIP (0–120):</label>
+    <select id="simpleSensitivity">
+        <option value="yes">Có</option>
+    </select>
+</div>
+
+<button onclick="generateSensitivity()">Tạo Độ Nhạy</button>
+
+
+        <div id="sensitivityResults" class="results">
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
